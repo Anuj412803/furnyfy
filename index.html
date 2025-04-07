@@ -3,53 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furnyfy Decor - Coming Soon</title>
+    <title>Furnyfy Decor - Transform Your Space</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-<body class="font-[Poppins] bg-gray-50">
+<body class="font-[Poppins] bg-neutral-50">
 
-    <nav class="bg-white border-b border-amber-100 fixed w-full z-50 transition-all duration-300 hover:shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0">
-                    <h1 class="text-2xl font-bold text-amber-900 font-[Playfair+Display]">Furnyfy Decor</h1>
-                </div>
+<!-- Animated Navbar -->
+<nav class="bg-white border-b border-amber-100 fixed w-full z-50 transition-all duration-300 hover:shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+            <div class="flex-shrink-0">
+                <h1 class="text-2xl font-bold text-amber-900 font-[Playfair+Display]">Furnyfy Decor</h1>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-amber-900 transition-colors">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-amber-900 transition-colors">About</a>
+                <a href="#gallery" class="text-gray-700 hover:text-amber-900 transition-colors">Gallery</a>
+                <a href="#features" class="text-gray-700 hover:text-amber-900 transition-colors">Features</a>
+                <a href="#contact" class="text-gray-700 hover:text-amber-900 transition-colors">Contact</a>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
 <!-- Hero Section -->
-<section class="relative bg-[url(https://images.unsplash.com/photo-1586023492125-27b2c045efd7)] bg-cover bg-center bg-no-repeat">
-    <div class="absolute inset-0 bg-amber-900/75 sm:bg-transparent sm:from-amber-900/95 sm:to-amber-900/25 sm:bg-gradient-to-r"></div>
+<section class="relative min-h-screen overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" 
+           class="w-full h-full object-cover" 
+           alt="Interior Design Background">
+      <div class="absolute inset-0 bg-amber-900/75 sm:bg-gradient-to-r sm:from-amber-900/95 sm:to-amber-900/25"></div>
+    </div>
+  
     
-    <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-        <div class="max-w-3xl text-center sm:text-left">
-            <h1 class="text-4xl font-bold text-white sm:text-6xl font-[Playfair+Display]">
-                Crafting Dream Homes
-                <span class="block text-amber-300 mt-4">Coming Soon</span>
-            </h1>
-            
-            <p class="mt-6 max-w-xl text-amber-100 text-lg sm:text-xl/relaxed">
-                Transform your living space with our curated home decor solutions. Be the first to know when we launch!
-            </p>
+  
+    <!-- Content Container -->
+    <div class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:flex lg:items-center lg:min-h-screen lg:px-8 lg:py-24">
+      <!-- Centered Content Wrapper -->
+      <div class="w-full lg:flex lg:items-center lg:gap-16">
 
-            <form class="mt-8 max-w-md">
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <input 
-                        type="email" 
-                        placeholder="Enter your email" 
-                        class="w-full px-6 py-3 rounded-lg border border-amber-200 focus:ring-2 focus:ring-amber-500 focus:outline-none"
-                    >
-                    <button 
-                        type="submit" 
-                        class="w-full sm:w-auto px-8 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors font-medium"
-                    >
-                        Get Early Access
-                    </button>
-                </div>
+        <!-- Text Content -->
+        <div class="w-full lg:w-1/2 text-center lg:text-left mt-12 lg:mt-0">
+            <h1 class="text-4xl font-bold text-white sm:text-5xl lg:text-6xl font-[Playfair+Display] leading-tight">
+              Transform Your Space<br>
+              <span class="text-amber-300">With Elegance</span>
+            </h1>
+    
+            <p class="mt-6 text-lg text-amber-100 max-w-xl mx-auto lg:mx-0 lg:text-xl">
+              Create your dream home with our expert interior solutions
+            </p>
+    
+            <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a href="#" class="inline-flex items-center px-8 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors">
+                Explore Designs
+              </a>
+              <a href="#" class="inline-flex items-center px-8 py-3 bg-white text-amber-900 rounded-lg hover:bg-amber-50 transition-colors">
+                View Gallery
+              </a>
+            </div>
+          </div>
+
+
+        <!-- Form Section -->
+        <div class="w-full max-w-xl mt-12 lg:mb-0 lg:w-1/2 lg:flex lg:items-center">
+          <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 lg:mx-auto">
+            <h3 class="text-2xl font-[Playfair+Display] font-bold text-amber-900 mb-6 text-center">
+              Free Design Consultation
+            </h3>
+            <form class="space-y-4">
+              <div>
+                <input type="text" 
+                       class="w-full px-4 py-3 border border-amber-200 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" 
+                       placeholder="Full Name">
+              </div>
+              
+              <div>
+                <input type="email" 
+                       class="w-full px-4 py-3 border border-amber-200 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" 
+                       placeholder="Email Address">
+              </div>
+  
+              <div>
+                <input type="tel" 
+                       class="w-full px-4 py-3 border border-amber-200 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent" 
+                       placeholder="Phone Number">
+              </div>
+  
+              <button class="w-full bg-amber-900 text-white py-3 px-6 rounded-lg hover:bg-amber-800 transition-colors font-medium">
+                Get Free Quote
+              </button>
             </form>
+          </div>
         </div>
+  
+        
+      </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 px-4 bg-amber-50">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 animate-slide-in-left">
+            <h2 class="text-4xl font-[Playfair+Display] text-amber-900">Our Story</h2>
+            <p class="text-gray-600">At Furnyfy Decor, we believe your home should tell your story. Founded by passionate designers, we curate pieces that blend modern aesthetics with timeless elegance.</p>
+            <p class="text-gray-600">Every item in our collection is carefully crafted to transform houses into warm, inviting homes that reflect your unique personality.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1533779283484-8ad4940aa3a8" alt="About" class="rounded-xl shadow-xl animate-slide-in-right">
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="bg-amber-900 text-white py-16">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center px-4">
+        <div class="animate-pop-in">
+            <p class="text-4xl font-bold mb-2" id="yearsCount">0+</p>
+            <p>Years Experience</p>
+        </div>
+        <div class="animate-pop-in">
+            <p class="text-4xl font-bold mb-2" id="clientsCount">0+</p>
+            <p>Happy Clients</p>
+        </div>
+        <div class="animate-pop-in">
+            <p class="text-4xl font-bold mb-2" id="projectsCount">0+</p>
+            <p>Projects Done</p>
+        </div>
+        <div class="animate-pop-in">
+            <p class="text-4xl font-bold mb-2" id="awardsCount">0+</p>
+            <p>Awards Won</p>
+        </div>
+    </div>
+</section>
+
+<!-- Easy Start Section -->
+<section class="bg-amber-50 py-12 sm:py-16 lg:py-20 xl:py-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <p class="text-sm font-bold uppercase tracking-widest text-amber-700">Process Simplified</p>
+            <h2 class="mt-6 text-3xl font-bold tracking-tight text-amber-900 sm:text-4xl lg:text-5xl font-[Playfair+Display]">
+                It's Very Easy to Start With Furnyfy Homes
+            </h2>
+            <p class="mx-auto mt-4 max-w-2xl text-lg font-normal text-amber-700 lg:text-xl lg:leading-8">
+                Transform your space in 8 simple steps
+            </p>
+        </div>
+        <ul class="mx-auto mt-12 grid max-w-md grid-cols-1 gap-8 sm:mt-16 lg:mt-20 lg:max-w-7xl lg:grid-cols-4">
+            <!-- Step 1 -->
+            <li class="flex-start group relative flex flex-col p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-600 text-white text-xl font-bold mb-6">
+                    1
+                </div>
+                <h3 class="text-xl font-bold text-amber-900">Meet Our Expert</h3>
+                <p class="mt-2 text-base text-amber-700">Connect with our design experts online or offline</p>
+            </li>
+
+            <!-- Step 2 -->
+            <li class="flex-start group relative flex flex-col p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-600 text-white text-xl font-bold mb-6">
+                    2
+                </div>
+                <h3 class="text-xl font-bold text-amber-900">Design Consultation</h3>
+                <p class="mt-2 text-base text-amber-700">Get personalized designs & quotes</p>
+            </li>
+
+            <!-- Step 3 -->
+            <li class="flex-start group relative flex flex-col p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-600 text-white text-xl font-bold mb-6">
+                    3
+                </div>
+                <h3 class="text-xl font-bold text-amber-900">Book with ₹500</h3>
+                <p class="mt-2 text-base text-amber-700">Secure your project with minimal commitment</p>
+            </li>
+
+            <!-- Step 4 -->
+            <li class="flex-start group relative flex flex-col p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-600 text-white text-xl font-bold mb-6">
+                    4
+                </div>
+                <h3 class="text-xl font-bold text-amber-900">Finalize Details</h3>
+                <p class="mt-2 text-base text-amber-700">Approve designs, materials & samples</p>
+            </li>
+
+            <!-- Step 5 -->
+            <li class="flex-start group relative flex flex-col p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-600 text-white text-xl font-bold mb-6">
+                    5
+                </div>
+                <h3 class="text-xl font-bold text-amber-900">Place Order</h3>
+                <p class="mt-2 text-base text-amber-700">Confirm your customized order</p>
+            </li>
+
+            <!-- Step 6 -->
+            <li class="flex-start group relative flex flex-col p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-600 text-white text-xl font-bold mb-6">
+                    6
+                </div>
+                <h3 class="text-xl font-bold text-amber-900">Factory Production</h3>
+                <p class="mt-2 text-base text-amber-700">Precision crafting begins</p>
+            </li>
+
+            <!-- Step 7 -->
+            <li class="flex-start group relative flex flex-col p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-600 text-white text-xl font-bold mb-6">
+                    7
+                </div>
+                <h3 class="text-xl font-bold text-amber-900">Happy Handover</h3>
+                <p class="mt-2 text-base text-amber-700">Quality-checked installation</p>
+            </li>
+
+            <!-- Step 8 -->
+            <li class="flex-start group relative flex flex-col p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-600 text-white text-xl font-bold mb-6">
+                    8
+                </div>
+                <h3 class="text-xl font-bold text-amber-900">Warranty Enjoyment</h3>
+                <p class="mt-2 text-base text-amber-700">Relax with our guarantee</p>
+            </li>
+        </ul>
     </div>
 </section>
 
@@ -57,92 +230,331 @@
 <section id="features" class="py-20 bg-amber-50">
     <div class="max-w-7xl mx-auto px-4">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-[Playfair+Display] text-amber-900">Why Choose Furnyfy?</h2>
-            <p class="mt-4 text-lg text-amber-700 max-w-2xl mx-auto">
-                Discover the perfect blend of elegance and functionality for your home transformation
-            </p>
+            <h2 class="text-4xl font-[Playfair+Display] text-amber-900">Why Choose Us</h2>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
             <!-- Premium Quality -->
-            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2">
                 <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
                     <svg class="w-6 h-6 text-amber-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-semibold mb-2 text-amber-900">Premium Quality</h3>
-                <p class="text-gray-600">Crafted with finest materials for lasting beauty and durability</p>
+                <h3 class="text-xl font-semibold mb-2">Premium Quality</h3>
+                <p class="text-gray-600">Crafted with finest materials for lasting beauty.</p>
             </div>
 
-            <!-- Transparent Costing -->
-            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+            <!-- Costing -->
+            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2">
                 <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
                     <svg class="w-6 h-6 text-amber-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-semibold mb-2 text-amber-900">Transparent Costing</h3>
-                <p class="text-gray-600">No hidden charges with best market rates and instant quotes</p>
+                <h3 class="text-xl font-semibold mb-2">Transparent Costing</h3>
+                <p class="text-gray-600">No hidden costs, best rates in the market, instant pricing, and prompt work start.</p>
             </div>
 
-            <!-- One-Stop Convenience -->
-            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+            <!-- Convenience -->
+            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2">
                 <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
                     <svg class="w-6 h-6 text-amber-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v16h16V4H4z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-semibold mb-2 text-amber-900">Complete Solutions</h3>
-                <p class="text-gray-600">End-to-end home improvement services with free consultation</p>
+                <h3 class="text-xl font-semibold mb-2">One-Stop Convenience</h3>
+                <p class="text-gray-600">Comprehensive solutions for all home improvement needs with free consultation.</p>
             </div>
 
-            <!-- Timely Delivery -->
-            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+            <!-- Timeline -->
+            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2">
                 <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
                     <svg class="w-6 h-6 text-amber-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3v4h2V5h14v2h2V3H3z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-semibold mb-2 text-amber-900">Swift Execution</h3>
-                <p class="text-gray-600">45-day installation with regular progress updates</p>
+                <h3 class="text-xl font-semibold mb-2">Timely Delivery</h3>
+                <p class="text-gray-600">45 days installation for interior decor works with timely updates and project tracking.</p>
             </div>
 
-            <!-- Quality Assurance -->
-            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+            <!-- Quality -->
+            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2">
                 <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
                     <svg class="w-6 h-6 text-amber-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7v14"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-semibold mb-2 text-amber-900">Quality Assurance</h3>
-                <p class="text-gray-600">52+ quality checks using premium branded materials</p>
+                <h3 class="text-xl font-semibold mb-2">Assured Quality</h3>
+                <p class="text-gray-600">Branded materials and 52+ quality standards to ensure exceptional results.</p>
             </div>
 
             <!-- Warranty -->
-            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+            <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2">
                 <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
                     <svg class="w-6 h-6 text-amber-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-semibold mb-2 text-amber-900">5-Year Warranty</h3>
-                <p class="text-gray-600">Comprehensive coverage for long-term peace of mind</p>
+                <h3 class="text-xl font-semibold mb-2">Warranty Assurance</h3>
+                <p class="text-gray-600">Up to 5 years warranty on decors for long-lasting peace of mind.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-amber-900 text-amber-100 py-12">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-        <p class="text-lg font-[Playfair+Display] mb-4">Crafting Spaces, Creating Memories</p>
-        <div class="flex justify-center space-x-6 mb-6">
-            <a href="#" class="hover:text-amber-300 transition-colors">Privacy Policy</a>
-            <a href="#" class="hover:text-amber-300 transition-colors">Terms of Service</a>
+
+<!-- Gallery Section -->
+<section id="gallery" class="py-20 px-4 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-[Playfair+Display] text-center mb-12 text-amber-900">Our Collections</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Living Spaces -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" alt="Modern Living Room" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-2xl">Contemporary Living</h3>
+                </div>
+            </div>
+
+            <!-- Cozy Bedrooms -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92" alt="Luxury Bedroom" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-2xl">Serene Bedrooms</h3>
+                </div>
+            </div>
+
+            <!-- Dining Areas -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1600607688969-a5bf29f4603d" alt="Modern Dining Room" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-2xl">Elegant Dining</h3>
+                </div>
+            </div>
+
+            <!-- Home Office -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1585637071663-799845ad5212" alt="Modern Home Office" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-2xl">Productive Workspaces</h3>
+                </div>
+            </div>
+
+            <!-- Kitchen Designs -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba" alt="Modern Kitchen" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-2xl">Functional Kitchens</h3>
+                </div>
+            </div>
+
+            <!-- Outdoor Living -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fbe3" alt="Outdoor Patio" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-2xl">Outdoor Oasis</h3>
+                </div>
+            </div>
+
+            <!-- Bathroom Designs -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1574643156929-51fa098b0394" alt="Luxury Bathroom" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-2xl">Spa-like Bathrooms</h3>
+                </div>
+            </div>
+
+            <!-- Entryways -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a" alt="Modern Foyer" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-2xl">Grand Entrances</h3>
+                </div>
+            </div>
+
+            <!-- Kids Rooms -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1578898887932-dce23a595ad5" alt="Children's Bedroom" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-2xl">Playful Kids Spaces</h3>
+                </div>
+            </div>
+
+            <!-- Lighting Solutions -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1586788680434-30d324b2d46f" alt="Modern Chandelier" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-2xl">Statement Lighting</h3>
+                </div>
+            </div>
+
+            <!-- Textile Collection -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a" alt="Luxury Textiles" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-2xl">Artisanal Textiles</h3>
+                </div>
+            </div>
+
+            <!-- Seasonal Decor -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1578995510324-7e902c4f67e0" alt="Holiday Decor" class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <h3 class="text-white text-2xl">Seasonal Accents</h3>
+                </div>
+            </div>
         </div>
-        <p class="text-sm">&copy; 2025 Furnyfy Decor. All rights reserved.</p>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-[Playfair+Display] text-amber-900">Client Experiences</h2>
+            <p class="text-gray-600 mt-4">Discover how we've transformed homes</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Testimonial Card 1 -->
+            <div class="p-8 rounded-xl bg-amber-50 shadow-md hover:shadow-lg transition-shadow">
+                <p class="text-gray-600 mb-6">"Furnyfy completely transformed our living space into a modern yet cozy sanctuary. The attention to detail was outstanding!"</p>
+                <div class="flex items-center">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" class="w-12 h-12 rounded-full">
+                    <div class="ml-4">
+                        <p class="font-bold">Sarah Johnson</p>
+                        <p class="text-sm text-amber-700">Interior Designer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Card 2 -->
+            <div class="p-8 rounded-xl bg-amber-50 shadow-md hover:shadow-lg transition-shadow">
+                <p class="text-gray-600 mb-6">"We are absolutely thrilled with our new kitchen. It’s functional, stylish, and exceeded our expectations. Highly recommend Furnyfy!"</p>
+                <div class="flex items-center">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="w-12 h-12 rounded-full">
+                    <div class="ml-4">
+                        <p class="font-bold">Michael Brown</p>
+                        <p class="text-sm text-amber-700">Homeowner</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Card 3 -->
+            <div class="p-8 rounded-xl bg-amber-50 shadow-md hover:shadow-lg transition-shadow">
+                <p class="text-gray-600 mb-6">"Working with Furnyfy was a breeze. The team was professional, and they delivered on time without compromising quality. Love my new study room!"</p>
+                <div class="flex items-center">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client" class="w-12 h-12 rounded-full">
+                    <div class="ml-4">
+                        <p class="font-bold">Emily Davis</p>
+                        <p class="text-sm text-amber-700">Freelance Writer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Card 4 -->
+            <div class="p-8 rounded-xl bg-amber-50 shadow-md hover:shadow-lg transition-shadow">
+                <p class="text-gray-600 mb-6">"Furnyfy’s design ideas were fantastic! They turned my dull office into a vibrant, productive space. I couldn’t be happier with the outcome."</p>
+                <div class="flex items-center">
+                    <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Client" class="w-12 h-12 rounded-full">
+                    <div class="ml-4">
+                        <p class="font-bold">David Miller</p>
+                        <p class="text-sm text-amber-700">Entrepreneur</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Card 5 -->
+            <div class="p-8 rounded-xl bg-amber-50 shadow-md hover:shadow-lg transition-shadow">
+                <p class="text-gray-600 mb-6">"The craftsmanship and dedication shown by the Furnyfy team were exceptional. My bedroom makeover is simply breathtaking!"</p>
+                <div class="flex items-center">
+                    <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Client" class="w-12 h-12 rounded-full">
+                    <div class="ml-4">
+                        <p class="font-bold">James Lee</p>
+                        <p class="text-sm text-amber-700">Architect</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="bg-amber-50 rounded-2xl shadow-lg p-8 md:p-12">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-[Playfair+Display] text-amber-900">Let's Create Your Dream Space</h2>
+                <p class="text-gray-600 mt-4">We're here to help bring your vision to life</p>
+            </div>
+            <form class="max-w-2xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Name" class="w-full px-4 py-3 rounded-lg bg-white border border-amber-200 focus:ring-2 focus:ring-amber-500">
+                    <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-lg bg-white border border-amber-200 focus:ring-2 focus:ring-amber-500">
+                    <textarea rows="4" placeholder="Message" class="md:col-span-2 w-full px-4 py-3 rounded-lg bg-white border border-amber-200 focus:ring-2 focus:ring-amber-500"></textarea>
+                    <button class="md:col-span-2 w-full bg-amber-900 text-white py-3 rounded-lg hover:bg-amber-800 transition-colors">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-amber-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-[Playfair+Display] mb-4">Furnyfy Decor</h3>
+                <p class="text-amber-100">Creating beautiful living spaces since 2010</p>
+            </div>
+            <!-- Add footer columns -->
+        </div>
+        <div class="border-t border-amber-800 mt-8 pt-8 text-center text-amber-100">
+            <p>&copy; 2025 Furnyfy Decor. All rights reserved.</p>
+        </div>
     </div>
 </footer>
+
+<script>
+    // Scroll Reveal Animations
+    ScrollReveal().reveal('.animate-slide-in-left', {
+        delay: 200,
+        distance: '50px',
+        origin: 'left'
+    });
+
+    ScrollReveal().reveal('.animate-slide-in-right', {
+        delay: 200,
+        distance: '50px',
+        origin: 'right'
+    });
+
+    // Stats Counter
+    const counters = [
+        { element: document.getElementById('yearsCount'), target: 15 },
+        { element: document.getElementById('clientsCount'), target: 5000 },
+        { element: document.getElementById('projectsCount'), target: 1200 },
+        { element: document.getElementById('awardsCount'), target: 50 }
+    ];
+
+    counters.forEach(counter => {
+        let current = 0;
+        const updateCount = () => {
+            const increment = counter.target / 200;
+            if(current < counter.target) {
+                counter.element.innerText = Math.ceil(current) + '+';
+                current += increment;
+                setTimeout(updateCount, 10);
+            } else {
+                counter.element.innerText = counter.target + '+';
+            }
+        }
+        updateCount();
+    });
+</script>
 
 </body>
 </html>
